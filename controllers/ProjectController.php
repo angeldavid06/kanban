@@ -19,9 +19,8 @@
 
         public function insert () {
             if (isset($_POST['nombre'])) {
-                $nombre = $_POST['nombre'];
-                $values = "'$nombre'";
-                $result = $this->model->insert('projects','name',$values);
+                $this->model->setName($_POST['nombre']);
+                $result = $this->model->ProjectInsert();
                 if ($result) {
                     header("Location: http://localhost/kanban/?controller=ProjectController&action=show");
                 } else {

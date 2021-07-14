@@ -8,10 +8,10 @@
             $method = $_GET['action'];
             $action = $controller->$method();
         } else {
-            echo 'Método no existe';
+            echo 'This method not exists';
         }
     } else {
-        echo 'El controlador no existe';
+        echo 'This controller not exists';
     }
 
 ?>

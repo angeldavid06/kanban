@@ -21,6 +21,12 @@
         public function getName () {
             return $this->name;
         }
+
+        public function ProjectInsert () {
+            $values = "'".$this->name."'";
+            $result = Model::insert('projects','name',$values);
+            return $result;
+        }
     }
 
 ?>
