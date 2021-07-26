@@ -1,0 +1,55 @@
+.desk {
+    display: grid;
+    grid-template: 100px 1fr / repeat(5,1fr);
+    grid-gap: 10px;
+}
+
+.sub {
+    grid-column: 3 / 5;
+}
+
+.step {
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: 10px;
+}
+
+.sub-steps {
+    display: grid;
+    grid-template: repeat(2,1fr) / repeat(2,1fr);
+    grid-gap: 10px;
+}
+
+.tasks {
+    display: grid;
+    grid-gap: 10px;
+}
+
+.task {
+    padding: 10px 20px 20px 20px;
+    cursor: pointer;
+}
+
+.task-self {
+    padding: 10px 20px 10px 20px;
+}
+
+.title {
+    text-align: center;
+}
+
+.priority-0 {
+    background-color: var(--color-green-03);
+}
+
+.priority-1 {
+    background-color: var(--color-red-03);
+}
+
+.priority-2 {
+    background-color: var(--color-yellow-03);
+}
+
+.priority-3 {
+    background-color: var(--color-blue-03);
+}
